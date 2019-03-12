@@ -1,0 +1,35 @@
+
+<!-- <object data="/assets/pdf/resume.pdf" type="application/pdf" width="100%" >
+  <p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
+</object> -->
+
+<mat-card *ngIf="!passwordFormControl.valid" class="mat-elevation-z0" >
+
+<div class="center">
+  <h4 class="text-center"> Enter Password Given By Site Owner To View The Resume</h4>
+</div>
+
+<div class="center">
+  <form class="password-form" (ngSubmit)="submit(passwordFormControl.valid)">
+    <mat-form-field class="password-full-width">
+      <input matInput placeholder="Password" [formControl]="passwordFormControl" oninput="this.value = this.value.toLowerCase()">
+
+      <mat-error *ngIf="passwordFormControl.hasError('pattern') && !passwordFormControl.hasError('required')">
+       Please enter the correct passphrase!
+      </mat-error>
+      <mat-error *ngIf="passwordFormControl.hasError('required')">
+        Password <strong>required</strong> to view this resume
+      </mat-error>
+    </mat-form-field>
+  </form>
+</div>
+</mat-card>
+
+
+<div *ngIf="passwordFormControl.valid">
+  <object data="/assets/pdf/resume.pdf" type="application/pdf" width="100%" >
+    <p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
+  </object>
+</div>
+
+
