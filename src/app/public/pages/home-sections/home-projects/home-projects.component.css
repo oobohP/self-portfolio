@@ -14,3 +14,7 @@ mat-card button {
 .project-card {
   height: 100%;
 }
+
+mat-card-content {
+  padding-bottom: 4%;
+}

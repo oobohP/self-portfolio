@@ -1,4 +1,4 @@
-<nav [ngClass]="scrolledState">
+<!-- <nav [ngClass]="scrolledState">
 <mat-toolbar color="primary" class ="mat-elevation-z8">
   <mat-toolbar-row>
     <span class="pointer" routerLink="/"><i class="fas fa-laptop-code"></i> Steven's Portfolio</span>
@@ -7,4 +7,20 @@
     <span class ="navbar-item"><a routerLink="/contact" >Contact</a></span>
   </mat-toolbar-row>
 </mat-toolbar>
+</nav> -->
+
+<nav class="navbar navbar-expand-lg mat-elevation-z8" id="navContainer" [ngClass]="scrolledState">
+    <a class="navbar-brand" routerLink="/"><i class="fas fa-laptop-code"></i>  Steven's Portfolio </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon black-text"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+      </ul>
+        </div>
 </nav>

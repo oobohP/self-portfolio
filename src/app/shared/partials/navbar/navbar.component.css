@@ -11,6 +11,8 @@
 }
 
 .notmoved {
+  max-height: 5%;
+  background-color: #0a79eb;
   z-index: 1000;
   width: 100%;
   font-size: 1.5rem;
@@ -19,9 +21,11 @@
   transition: .5s ease-in-out;
 }
 .moved {
+  max-height: 6%;
+  background-color: #0a79eb;
   position: fixed;
   width: 100%;
-  font-size: 2rem;
+  font-size: 1.5rem;
   z-index: 1000;
   transition: .5s ease-in-out;
 }

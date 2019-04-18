@@ -9,17 +9,14 @@ export class NavbarComponent implements OnInit {
   scrolledState: string;
   @HostListener('window:scroll', ['$event'])
   onScroll(event) {
-    if (event.path[1].scrollY > 80) {
-      this.scrolledState = 'moved';
-    } else if (event.path[1].scrollY === 0) {
+    if (event.path[1].scrollY > 40) {
       this.scrolledState = 'notmoved';
+    } else if (event.path[1].scrollY === 0) {
+      this.scrolledState = 'moved';
     }
-    console.log(this.scrolledState);
   }
 
-  constructor() { }
-
   ngOnInit() {
-    this.scrolledState = 'notmoved';
+    this.scrolledState = 'moved';
   }
 }
