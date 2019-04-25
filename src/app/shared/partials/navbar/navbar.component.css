@@ -11,7 +11,7 @@
 }
 
 .notmoved {
-  max-height: 18%;
+  max-height: 22%;
   background-color: #0a79eb;
   z-index: 500;
   width: 100%;
@@ -20,7 +20,7 @@
 
 }
 .moved {
-  max-height: 18%;
+  max-height: 22%;
   background-color: #0a79eb;
   position: fixed;
   width: 100%;
