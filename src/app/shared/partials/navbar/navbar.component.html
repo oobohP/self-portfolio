@@ -1,20 +1,18 @@
-<!-- <nav [ngClass]="scrolledState">
-<mat-toolbar color="primary" class ="mat-elevation-z8">
-  <mat-toolbar-row>
-    <span class="pointer" routerLink="/"><i class="fas fa-laptop-code"></i> Steven's Portfolio</span>
-    <span class = "example-spacer"></span>
-    <span class ="navbar-item"><a routerLink="/" >Home</a></span>
-    <span class ="navbar-item"><a routerLink="/contact" >Contact</a></span>
-  </mat-toolbar-row>
-</mat-toolbar>
-</nav> -->
-
-<nav class="navbar navbar-expand-lg mat-elevation-z8" id="navContainer" [ngClass]="scrolledState">
+<!-- old navbar -->
+<!-- <nav class="navbar navbar-expand-lg mat-elevation-z8" id="navContainer" [ngClass]="scrolledState">
     <a class="navbar-brand" routerLink="/"><i class="fas fa-laptop-code"></i>  Steven's Portfolio </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon black-text"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavigation" aria-controls="myNavigation" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <button "class="navbar-toggler" type="button"
+          (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse"
+       [ngClass]="{ 'show': navbarOpen }">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <a class="nav-link" routerLink="/">Home</a>
@@ -22,5 +20,24 @@
           <a class="nav-link" routerLink="/contact">Contact</a>
         </li>
       </ul>
-        </div>
+        </div> -->
+
+<!-- navbar with responsive design  -->
+<nav class="navbar navbar-expand-lg mat-elevation-z8" id="navContainer" [ngClass]="scrolledState">
+  <a style="font-size: 1.5rem;" class="navbar-brand" routerLink="/"><i class="fas fa-laptop-code"></i>  Steven's Portfolio </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavigation"
+   aria-controls="myNavigation" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="myNavigation" [ngClass]="{ 'show': navbarOpen }">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact">Contact</a>
+        </li>
+      </ul>
+  </div>
 </nav>
