@@ -34,9 +34,9 @@
   <div class="collapse navbar-collapse" id="myNavigation" [ngClass]="{ 'show': navbarOpen }">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/">Home</a>
+          <a class="nav-link" routerLink="/" (click)=toggleNavbar() >Home</a>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/contact">Contact</a>
+          <a class="nav-link" routerLink="/contact" (click)=toggleNavbar() >Contact</a>
         </li>
       </ul>
   </div>
