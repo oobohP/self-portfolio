@@ -10,3 +10,8 @@ a:hover {
   padding: 1%;
   font-size: 24px;
 }
+
+/*Padding on bottom to remove white line underneath footer*/
+mat-toolbar {
+  padding-bottom: 4px;
+}
