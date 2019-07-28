@@ -4,7 +4,7 @@ mat-card {
 
 mat-card button {
   position: absolute;
-  bottom: 1%;
+  bottom: 2%;
   left:50%;
   transform: translateX(-50%);
 }
@@ -13,6 +13,11 @@ mat-card button {
 
 .project-card {
   height: 100%;
+}
+
+[class*="col-"] {
+  
+  border: 3px solid transparent;
 }
 
 mat-card-content {

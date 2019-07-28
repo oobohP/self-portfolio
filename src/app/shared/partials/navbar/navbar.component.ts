@@ -7,11 +7,8 @@ import { Component, OnInit, HostListener } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-  scrolledState: string;
-
-
   ngOnInit() {
-    this.scrolledState = 'moved';
+    
   }
 
   navbarOpen = false;
