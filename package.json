@@ -30,7 +30,7 @@
     "ng2-smooth-scroll": "^1.0.1",
     "ngx-page-scroll": "^5.0.0",
     "popper.js": "^1.15.0",
-    "rxjs": "^6.0.0",
+    "rxjs": "^6.2.2",
     "zone.js": "^0.8.26"
   },
   "devDependencies": {

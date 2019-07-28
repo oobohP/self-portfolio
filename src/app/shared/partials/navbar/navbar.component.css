@@ -10,24 +10,13 @@
   cursor:pointer;
 }
 
-.notmoved {
-  max-height: 22%;
-  background-color: #0a79eb;
-  z-index: 500;
-  width: 100%;
-  font-size: 1.3rem;
-  position: fixed;
-
-}
-.moved {
-  max-height: 22%;
+.navbar-style {
   background-color: #0a79eb;
   position: fixed;
   width: 100%;
   font-size: 1.3rem;
   z-index: 500;
-
 }
 
-
-.navbar-toggler-icon { background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }
+.navbar-toggler-icon { background-image: 
+url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 0.9)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E"); }

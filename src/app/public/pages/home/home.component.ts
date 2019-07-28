@@ -7,8 +7,6 @@ import {FormControl} from '@angular/forms';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  disableSelect = new FormControl(false);
-
   constructor() { }
 
   ngOnInit() {

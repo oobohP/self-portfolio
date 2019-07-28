@@ -1,29 +1,5 @@
-<!-- old navbar -->
-<!-- <nav class="navbar navbar-expand-lg mat-elevation-z8" id="navContainer" [ngClass]="scrolledState">
-    <a class="navbar-brand" routerLink="/"><i class="fas fa-laptop-code"></i>  Steven's Portfolio </a>
-
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavigation" aria-controls="myNavigation" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <button "class="navbar-toggler" type="button"
-          (click)="toggleNavbar()">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse"
-       [ngClass]="{ 'show': navbarOpen }">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/">Home</a>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/contact">Contact</a>
-        </li>
-      </ul>
-        </div> -->
-
-<!-- navbar with responsive design  -->
-<nav class="navbar navbar-expand-lg mat-elevation-z8" id="navContainer" [ngClass]="scrolledState">
+<!-- navbar included with two functions close and open the hamburger icon when clicking on routers.  -->
+<nav class="navbar navbar-expand-lg mat-elevation-z8 navbar-style" id="navContainer" >
   <a style="font-size: 1.3rem;" class="navbar-brand" routerLink="/" (click)=closeNavbar() ><i class="fas fa-laptop-code"></i>  Steven's Portfolio </a>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavigation"
@@ -40,4 +16,5 @@
         </li>
       </ul>
   </div>
+  
 </nav>
