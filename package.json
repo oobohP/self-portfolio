@@ -1,5 +1,5 @@
 {
-  "name": "wei-portfolio-page",
+  "name": "sly-portfolio-page",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -13,7 +13,7 @@
   "dependencies": {
     "@angular/animations": "^6.1.1",
     "@angular/cdk": "^6.4.3",
-    "@angular/common": "^6.0.3",
+    "@angular/common": "^6.1.1",
     "@angular/compiler": "^6.0.3",
     "@angular/core": "^6.0.3",
     "@angular/forms": "^6.0.3",
