@@ -9,15 +9,13 @@ mat-card button {
   transform: translateX(-50%);
 }
 
-.section {margin-bottom: 2%}
-
 .project-card {
   height: 100%;
 }
 
 [class*="col-"] {
-  
-  border: 3px solid transparent;
+  padding-bottom:3%;
+  /* border: 5px solid transparent; */
 }
 
 mat-card-content {
