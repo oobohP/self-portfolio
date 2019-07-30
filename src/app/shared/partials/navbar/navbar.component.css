@@ -12,7 +12,7 @@
 
 .navbar-style {
   background-color: #0a79eb;
-  position: fixed;
+  position: relative;
   width: 100%;
   font-size: 1.3rem;
   z-index: 500;
