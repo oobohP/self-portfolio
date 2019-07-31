@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { ROUTES} from './public.routes';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ResumeComponent } from './pages/resume/resume.component';
+import { AboutMeComponent } from './pages/about-me/about-me.component';
 
 @NgModule({
   imports: [
@@ -23,6 +24,6 @@ import { ResumeComponent } from './pages/resume/resume.component';
     HomeComponent,
     RouterModule
   ],
-  declarations: [HomeComponent, HomeSplashComponent, HomeProjectsComponent, DefaultLayoutComponent, ContactComponent, ResumeComponent]
+  declarations: [HomeComponent, HomeSplashComponent, HomeProjectsComponent, DefaultLayoutComponent, ContactComponent, ResumeComponent, AboutMeComponent]
 })
 export class PublicModule { }
