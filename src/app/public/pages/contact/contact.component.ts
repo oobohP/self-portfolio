@@ -6,11 +6,14 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.css']
 })
-export class ContactComponent implements OnInit {
+export class ContactComponent {
 
-  constructor() { }
+  log (x) {
+    console.log(x);
+  }
 
-  ngOnInit() {
+  submit (contactForm) {
+    console.log(contactForm.value)
   }
 
 }
