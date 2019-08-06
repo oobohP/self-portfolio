@@ -13,23 +13,23 @@ import { MESSAGES_CONTAINER_ID } from '@angular/cdk/a11y';
 })
 export class ContactComponent {
   _db:AngularFirestore;
-  messages: Observable<any[]>;
+  private messages: Observable<any[]>;
 
-  constructor( db:AngularFirestore ) {
+  constructor(db:AngularFirestore ) {
     this.messages = db.collection('messages').valueChanges();
     this._db = db;
   }
   
-  log (x) {
-    console.log(x);
-  }
 
   submit (contactForm) {
-    console.log(contactForm.value)
+    // console.log(contactForm.value)
     
     let messageCollection = this._db.collection('messages');
 
+    //TODO : put data in SET before adding to DB
     messageCollection.add(contactForm.value);
+
+    contactForm.reset();
   }
 
 }
