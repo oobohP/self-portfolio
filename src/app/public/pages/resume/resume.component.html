@@ -6,7 +6,7 @@
 <mat-card *ngIf="!passwordFormControl.valid" class="mat-elevation-z0" >
 
 <div class="center">
-  <h4 class="text-center"> Enter Password Given By Site Owner To View The Resume</h4>
+  <h4 class="text-center"> Enter Password </h4>
 </div>
 
 <div class="center">
@@ -28,7 +28,7 @@
 
 <div *ngIf="passwordFormControl.valid">
   <object data="/assets/pdf/resume.pdf" type="application/pdf" width="100%" style="padding-top: 1%">
-    <p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/pdf/sample-3pp.pdf">Download PDF</a>.</p>
+    <p><b>Example fallback content</b>: This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/pdf/resume.pdf">Download PDF</a>.</p>
   </object>
 </div>
 

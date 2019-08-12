@@ -50,13 +50,18 @@
   </div>
 
   <!-- disables if required fields are not valid -->
-  <button class="btn btn-primary" [disabled]="!contactForm.valid">Submit</button>
+  <button 
+  class="btn btn-primary"
+  [disabled]="!contactForm.valid"
+  (click)="openSnackBar('Message Sent', 'Dismiss')"
+  >Submit</button>
 
   </mat-card>
 </form>
 
-
 <!-- TODO: 
-○ Start creating contact form either email to mxmailer or hook it up to a db (<- :[ ))
+○ Form Submit Limiter declutter noSQL db ?? - possible not sure if needed
+○ Add Email field next to name
+○ 
 -->
 
