@@ -1,5 +1,16 @@
 # self-portfolio
+Creating a Single Page Application website portfolio using Angular and Firebase
 
+Uses:
+Routing
+Form Validation
+Services
+Material Design
+Bootstrap 4
+Bindings
+Firebase Real-time database
+
+# Development
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
 
 ## Development server
