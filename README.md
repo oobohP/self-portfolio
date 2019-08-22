@@ -2,12 +2,12 @@
 Creating a Single Page Application website portfolio using Angular and Firebase
 
 Uses:`
-Routing
-Form Validation
-Services
-Material Design
-Bootstrap 4
-Bindings
+Routing|  
+Form Validation|  
+Services|  
+Material Design|  
+Bootstrap 4|  
+Bindings|  
 Firebase Real-time database`
 
 # Development
