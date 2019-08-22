@@ -1,7 +1,7 @@
 # self-portfolio
 Creating a Single Page Application website portfolio using Angular and Firebase
 
-Uses:
+Uses: <br />
   Routing <br />
   Form Validation <br />
   Services <br />
