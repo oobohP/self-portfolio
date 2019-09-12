@@ -11,6 +11,7 @@ import { ROUTES} from './public.routes';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 @NgModule({
   imports: [
@@ -24,6 +25,6 @@ import { AboutMeComponent } from './pages/about-me/about-me.component';
     HomeComponent,
     RouterModule
   ],
-  declarations: [HomeComponent, HomeSplashComponent, HomeProjectsComponent, DefaultLayoutComponent, ContactComponent, ResumeComponent, AboutMeComponent]
+  declarations: [HomeComponent, HomeSplashComponent, HomeProjectsComponent, DefaultLayoutComponent, ContactComponent, ResumeComponent, AboutMeComponent, PortfolioComponent]
 })
 export class PublicModule { }

@@ -3,6 +3,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { ResumeComponent } from './pages/resume/resume.component';
 import { AboutMeComponent } from './pages/about-me/about-me.component';
+import { PortfolioComponent } from './pages/portfolio/portfolio.component';
 
 
 export const ROUTES: Routes = [
@@ -26,6 +27,10 @@ export const ROUTES: Routes = [
     component: AboutMeComponent
   },
 
+  {
+    path: 'portfolio',
+    component: PortfolioComponent
+  },
   {
     path: '**',
     redirectTo: '/'
